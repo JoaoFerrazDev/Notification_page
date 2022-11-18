@@ -4,6 +4,25 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+body {
+    padding: 20px 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+}
+
+.notification_text {
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (min-width: 1200px) {
     
     
