@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
   </style>
@@ -24,9 +26,10 @@
   <div class="content">
 
     <div class="header">
-      <h3>Notifications</h3>
-      <h3>3</h3>
-      <a href="#">Mark all as read</a>
+      <div>
+        <h3>Notifications <span id="counter">3</span></h3>
+      </div>
+      <a href="#" id="mark_all_read">Mark all as read</a>
 
     </div>
 
@@ -34,7 +37,7 @@
 
       <img src="/assets/images/avatar-mark-webber.webp" alt="">
       <div class="notification_text">
-        <p>Mark Webber reacted to your recent post My first tournament today!</p>
+        <p><a href="#" class="names">Mark Webber </a> reacted to your recent post <a href="#" class="post"> My first tournament today!</a><span class="red_dot" id="red_dot"> </span></p>
         <p>1m ago</p>
       </div>
 
@@ -45,7 +48,7 @@
       
       <img src="/assets/images/avatar-angela-gray.webp" alt="">
       <div class="notification_text">
-        <p>Angela Gray followed you</p>
+        <p><a href="#" class="names">Angela Gray </a> followed you<span class="red_dot" id="red_dot"> </span></p>
         <p>5m ago</p>
       </div>
 
@@ -55,7 +58,7 @@
 
       <img src="/assets/images/avatar-jacob-thompson.webp" alt="">
       <div class="notification_text">
-        <p>Jacob Thompson has joined your group Chess Club</p>
+        <p><a href="#" class="names">Jacob Thompson </a> has joined your group <a href="#" class="group"> Chess Club</a><span class="red_dot" id="red_dot"> </span></p>
         <p>1 day ago</p>
       </div>
 
@@ -65,9 +68,9 @@
 
       <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="">
       <div class="notification_text">
-        <p>Rizky Hasanuddin sent you a private message</p>
+        <p><a href="#" class="names">Rizky Hasanuddin </a> sent you a private message</p>
         <p>5 days ago</p>
-        <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+        <p class="text_box">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
           I'm already having lots of fun and improving my game.
         </p>
       </div>
@@ -77,9 +80,12 @@
     <div class="notification">
 
       <img src="/assets/images/avatar-kimberly-smith.webp" alt="">
-      <div class="notification_text">
-        <p>Kimberly Smith commented on your picture</p>
-        <p>1 week ago</p>
+      <div class="notification_text_with_image">
+        <div class="text_with_image">
+          <p><a href="#" class="names">Kimberly Smith </a> commented on your picture </p>
+          <p>1 week ago</p>
+        </div>
+        <img src="assets/images/image-chess.webp" alt="" id="image">
       </div>
 
     </div>
@@ -88,7 +94,7 @@
 
       <img src="/assets/images/avatar-nathan-peterson.webp" alt="">
       <div class="notification_text">
-        <p>Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate</p>
+        <p><a href="#" class="names">Nathan Peterson </a> reacted to your recent post <a href="#" class="post"> 5 end-game strategies to increase your win rate</a></p>
         <p>2 weeks ago</p>
       </div>
 
@@ -98,7 +104,7 @@
 
       <img src="/assets/images/avatar-anna-kim.webp" alt="">
       <div class="notification_text">
-        <p>Anna Kim left the group Chess Club</p>
+        <p><a href="#" class="names">Anna Kim </a> left the group <a href="#" class="group"> Chess Club</a></p>
         <p>2 weeks ago</p>
       </div>
 

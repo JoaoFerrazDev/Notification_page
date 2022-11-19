@@ -4,26 +4,150 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 body {
-    padding: 20px 10px;
+    background-color: hsl(210, 60%, 98%);
+}
+
+body p {
+    font-size: 16px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    border-radius: 7px;
+    gap: 20px;
+    padding: 3% 5%;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.header h3 {
+    font-weight: 800;
+}
+
+.header h3 > span {
+    background-color: hsl(219, 85%, 26%);
+    padding: 2px 10px;
+    border-radius: 5px;
+    color:white;
+    font-size: 14px;
+}
+
+.header a {
+    color: hsl(219, 12%, 42%);
 }
 
 .notification {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    padding: 15px 15px;
+}
+
+.active {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 5px;
+}
+
+.notification img {
+    width: 10%;
+    height: 10%;
 }
 
 .notification_text {
     display: flex;
     flex-direction: column;
+    color: hsl(219, 14%, 63%);
+    width: 100%;
+}
+
+.notification_text_with_image {
+    display: flex;
+    flex-direction: row;
+    color: hsl(219, 14%, 63%);
+    width: 100%;
+}
+
+.text_box {
+    border: 1px solid hsl(219, 12%, 42%);
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: hsl(219, 12%, 42%);
+}
+
+.text_box:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+
+a {
+    font-weight: 800;
+}
+
+a.names {
+    color:black;
+}
+
+a.group {
+    color: hsl(219, 85%, 26%);
+}
+
+a.post {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+
+.red_dot{
+    background-color: hsl(1, 90%, 64%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.text_with_image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#image {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: hsl(219, 85%, 26%);
 }
 
 @media only screen and (min-width: 1200px) {
     
-    
+    .content {
+        margin-top: 40px;
+    }
 }
